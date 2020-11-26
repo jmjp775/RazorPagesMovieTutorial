@@ -19,7 +19,7 @@ namespace RazorPagesMovie.Models
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
 
-        [RegularExpression(@"^[A-Z]+[a-zA-Z]*$")]
+        [RegularExpression(@"^[A-Z]+[a-zA-Z]*\s[A-Z]+[a-zA-Z]*$")]
         [StringLength(30)]
         [Required]
         public string Genre { get; set; }
